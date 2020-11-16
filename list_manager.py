@@ -1,5 +1,7 @@
 # List manager
 import random
+import statistics
+import numpy as np
 
 def random_order(list1):
     '''returns the list with random order'''
@@ -37,10 +39,19 @@ def get_highest_value(list1):
 
 def get_lowest_value(list1):
     return min(list1)
-    
+
+def mean(list1):
+    return statistics.mean(list1)
+
+def median(list1):
+    return statistics.median(list1)
+
+def std_deviation(list1):
+    return statistics.stdev(list1)
+
 
 if __name__ == "__main__":
-    list_1 = [1, 2, 3, 4]
+    list_1 = [1, 1, 2, 2, 3, 3, 3, 4]
     print(stringfy_list(list_1))
     print(multiply_list(list_1,5))
     print(get_highest_value(list_1))
@@ -49,3 +60,6 @@ if __name__ == "__main__":
     print(order_by_increasing_value(list_1))
     print(order_by_decreasing_value(list_1))
     print(reverse_order(list_1))
+    print(mean(list_1))
+    print(median(list_1))
+    print(std_deviation(list_1))
