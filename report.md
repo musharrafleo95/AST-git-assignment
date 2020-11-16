@@ -18,10 +18,9 @@
 * Musharraf then resolved the conflict by modifying the "list_manager.py" file, then commit the changes and pushed it in the remote repository.
 
 ### (Part 10)
+![git_log_screenshot](https://github.com/musharrafleo95/AST-git-assignment/blob/master/git_log_graph.png)
 
 
 
 
 
-Include a screeshot of the output of the command: `git log --oneline --graph --decorate --all
-`           
