@@ -61,8 +61,8 @@ def most_common(list1):
     common = np.array(list1)
     return np.bincount(common).argmax()
 
-def sum_of_all(list1):
-    sumofall = np.array(list1)
+def sum_of_all(list2):
+    sumofall = np.array(list2)
     return np.sum(sumofall)
     
 
