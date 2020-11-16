@@ -1,20 +1,25 @@
 # List manager
+import random
 
-def random_order(list):
+def random_order(list1):
     '''returns the list with random order'''
-    pass
+    random.shuffle(list1)
+    return list1
 
-def order_by_increasing_value(list):
+def order_by_increasing_value(list1):
     '''returns the list ordered by increasing value'''
-    pass
+    list1.sort()
+    return list1
 
-def order_by_decreasing_value(list):
+def order_by_decreasing_value(list1):
     '''returns the list ordered by decreasing value'''
-    pass
+    list1.sort(reverse = True)
+    return list1
 
-def reverse_order(list):
+def reverse_order(list1):
     '''returns the list in reverse order'''
-    pass
+    return list1[::-1]
+
 
 def stringfy_list(list):
     '''returns a list with all elements turned into strings'''
