@@ -1,5 +1,6 @@
 # List manager
 import random
+import numpy
 
 def random_order(list1):
     '''returns the list with random order'''
@@ -37,6 +38,18 @@ def get_highest_value(list1):
 
 def get_lowest_value(list1):
     return min(list1)
+
+def unique_item(list1):
+    unique_one = np.array(list1)
+    return np.unique(unique_one)
+
+def most_common(list1):
+    common = np.array(list1)
+    return np.bincount(common).argmax()
+
+def sum_of_all(list1):
+    sumofall = np.array(list1)
+    return np.sum(sumofall)
     
 
 if __name__ == "__main__":
